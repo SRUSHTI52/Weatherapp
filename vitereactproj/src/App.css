@@ -1,0 +1,167 @@
+
+body {
+  background: linear-gradient(to right, #b5c8ff, #88c3fe, #666ff8, #2e54fe);
+  color: #040f40;
+
+}
+.weather-container {
+  position: absolute;
+  top: 25%;
+  max-width: 100vw;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-family: 'Playwrite+DE+Grund',
+}
+
+.cuform {
+
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  margin-left: 20px;
+}
+
+.input_container {
+  position: relative;
+  top: 40%;
+  min-width: 0;
+  max-width: 230px;
+  background-color: transparent;
+  margin-right: 20px; 
+  border-bottom: solid 2px #090a3c;
+}
+
+.input {
+  width: 100%;
+  padding-bottom: 12px;
+  min-width: 0;
+  max-width: 230px;
+  border: none;
+  outline: none;
+  height: 40px;
+  font-size: 27px;
+  letter-spacing: -0.7px;
+  color: #090a3c;
+  -webkit-tap-highlight-color: transparent;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.input::placeholder {
+  color: #090a3c;
+  font-size: 1.2rem;
+}
+
+.get {
+  position: fixed;
+  left: 25%;
+  top: 25%;
+  background-color: #040f40;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dropdown {
+  margin-top: 10px;
+  width: 100%;
+  min-width: 0;
+  max-width: 230px;
+  height: 100%;
+  max-height: 150px;
+  overflow-x: hidden;
+  border: 1px solid #000000;
+  background-color: transparent;
+  border-radius: 8px;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.dropdown.v {
+  visibility: visible;
+}
+
+.dropdown_item {
+  width: 100%;
+  max-width: 230px;
+  padding: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #000000;
+}
+
+.dropdown_item:hover {
+  background-color: #d8e1ff;
+}
+.item_text1 {
+  color: #090a3c;
+  margin-bottom: 5px;
+}
+
+.item_text2 {
+  font-size: 14px;
+  color: #090a3c80;
+}
+.weather-details {
+  margin-top: 15%;
+  margin-left: 40vw;
+  width: 45%;
+  margin-bottom: 20%;
+  border: 2px solid white;
+  text-align: center;
+  box-shadow: 2px 3px 20px 4px lightblue inset;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+.grid-container {
+  margin: 0px auto;
+  display: grid;
+  width: 90%;
+  height: 30%;
+  grid-template-columns: repeat(2, 1fr); 
+}
+
+#main{
+  height: 20%;
+  width: 20%;
+  background-color: #fff;
+  border: 2px solid rgb(3, 3, 58);
+  border-radius: 10px;
+  box-shadow: 2px 3px 20px 4px rgb(4, 86, 113) ;
+}
+
+#weatherinfo, #temp{
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+#cityname{
+  font-size: 2rem;
+}
+
+.icon-text-container {
+  display: flex;
+  align-items: center; 
+}
+
+.icon {
+  height: 10%;
+  width: 10%;
+  margin-right: 8px; 
+}  
+
